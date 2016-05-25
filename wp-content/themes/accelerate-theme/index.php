@@ -15,6 +15,7 @@
  */
 
 get_header(); ?>
+
 	<!-- BLOG PAGE -->
 	<section class="blog-page">
 		<div class="site-content">
@@ -52,7 +53,18 @@ get_header(); ?>
 			<?php get_sidebar(); ?>
 		</div>
 				<div class="clearfix"></div>
-
+					<h4>From the Blog</h4>
+					<?php query_posts('posts_per_page=1'); ?>
 	</section>
+
+<section class="recent-posts">
+	<div class="site-content">
+		<div class="blog-post">
+
+ 		</div>
+	</div>
+</section>
 	<!-- END blog page -->
+
+
 <?php get_footer();
